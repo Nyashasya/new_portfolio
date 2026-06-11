@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Иван Иванов | Портфолио веб-разработчика</title>
+    <!-- Подключение внешнего CSS файла -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-bar">
+        <div class="logo">
+            <h1>Анастасия</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <!-- БЛОК ОБО МНЕ -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-photo">
+                    <img class="avatar" 
+                         src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%233b82f6' /%3E%3Ccircle cx='35' cy='40' r='5' fill='%23ffffff' /%3E%3Ccircle cx='65' cy='40' r='5' fill='%23ffffff' /%3E%3Cpath d='M30 65 Q50 80 70 65' stroke='%23ffffff' stroke-width='4' fill='none' stroke-linecap='round' /%3E%3C/svg%3E"
+                         alt="Фото разработчика">
+                </div>
+                <div class="about-text">
+                    <p><strong>Меня зовут Анастасия.</strong> Я начинающий веб-разработчик, изучаю HTML, CSS и JavaScript. Создаю современные адаптивные интерфейсы, постоянно учусь новым технологиям и стремлюсь писать чистый, поддерживаемый код.</p>
+                    <p>За моими плечами несколько учебных проектов, где я применяла Flexbox, Grid, семантическую вёрстку и базовый JS. Готова к сотрудничеству и интересным задачам!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК НАВЫКИ -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Навыки</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Flexbox</li>
+                <li>Grid</li>
+                <li>Git</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- БЛОК ПРОЕКТЫ -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Сайт ресторана</h3>
+                    <p>Одностраничный сайт для кафе с меню, галереей и бронированием столиков.</p>
+                    <button class="btn-details" onclick="alert('Сайт ресторана: демо-версия с HTML/CSS и JS формой.')">Подробнее</button>
+                </div>
+                <div class="project-card">
+                    <h3>Портфолио фотографа</h3>
+                    <p>Галерея на Grid, эффекты при наведении, фильтрация изображений.</p>
+                    <button class="btn-details" onclick="alert('Портфолио фотографа — интерактивная сетка изображений.')">Подробнее</button>
+                </div>
+                <div class="project-card">
+                    <h3>Todo-лист</h3>
+                    <p>Приложение для задач: добавление, удаление, сохранение в localStorage.</p>
+                    <button class="btn-details" onclick="alert('Todo-лист: чистый JS, возможность отмечать выполненные задачи.')">Подробнее</button>
+                </div>
+                <div class="project-card">
+                    <h3>Калькулятор валют</h3>
+                    <p>Виджет с курсами валют, динамическая конвертация.</p>
+                    <button class="btn-details" onclick="alert('Калькулятор валют — интеграция с API, асинхронный код.')">Подробнее</button>
+                </div>
+                <div class="project-card">
+                    <h3>Лендинг стартапа</h3>
+                    <p>Современный лендинг с секциями, формами подписки, анимацией.</p>
+                    <button class="btn-details" onclick="alert('Лендинг стартапа — полная адаптивность, transition.')">Подробнее</button>
+                </div>
+                <div class="project-card">
+                    <h3>Интернет-магазин</h3>
+                    <p>Каталог товаров с фильтрацией, корзина на JS.</p>
+                    <button class="btn-details" onclick="alert('Интернет-магазин  — добавление в корзину.')">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК КОНТАКТЫ -->
+    <section id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-flex">
+                <div class="contact-item">
+                    <span class="emoji">📧</span>
+                    <a href="mailto:nyashasya@yandex.ru">nyashasya@yandex.ru</a>
+                </div>
+                <div class="contact-item">
+                    <span class="emoji">📞</span>
+                    <a href="tel:+79161234567">+7 (123) 456-78-90</a>
+                </div>
+                <div class="contact-item">
+                    <span class="emoji">💻</span>
+                    <a href="https://github.com/nyashasya" target="_blank" rel="noopener noreferrer">github.com/nyashasya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        © 2026 Портфолио веб-разработчика |
+    </div>
+</footer>
+
+</body>
+</html>
